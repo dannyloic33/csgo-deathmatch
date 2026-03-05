@@ -39,7 +39,7 @@ jobs:
         mv ./README.md ./artifact
 
     - name: Upload compiled plugin
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v3
       with:
         name: Compiled plugin with SM ${{ steps.setup.outputs.version }}
         path: artifact
